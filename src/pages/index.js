@@ -6,12 +6,26 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            Dark mode
+          </label>
+        )}
+      </ThemeToggler>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
