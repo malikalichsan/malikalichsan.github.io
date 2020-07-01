@@ -37,6 +37,7 @@ const Layout = ({ location, title, children }) => {
           {({ theme, toggleTheme }) => (
             <Switch
               isOn={theme === 'dark'}
+              onColor="grey"
               handleToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
             />
           )}
@@ -71,6 +72,7 @@ const Layout = ({ location, title, children }) => {
           {({ theme, toggleTheme }) => (
             <Switch
               isOn={theme === 'dark'}
+              onColor="grey"
               handleToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
             />
           )}

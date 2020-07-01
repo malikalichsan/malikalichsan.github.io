@@ -36,10 +36,6 @@
     background: #ffffff;
 }
 
-.react-switch-checkbox:checked + .react-switch-label {
-    background: grey;
-}
-
 .react-switch-label:active .react-switch-button {
     width: 50px;
 }
