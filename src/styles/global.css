@@ -14,7 +14,7 @@ body.dark {
     --bg: #1a202c;
     --textNormal: rgba(255, 255, 255, 0.88);
     --textTitle: white;
-    --textLink: yellow;
+    --textLink: #ffc207;
     --borderBlockquote: hsl(225, 3%, 76%);
     --hr: hsla(0, 0%, 100%, 0.2);
 }

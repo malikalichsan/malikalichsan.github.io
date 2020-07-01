@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Switch from "./Switch"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -9,42 +11,71 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
+      <div
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
+          display: `flex`,
+          justifyContent: `space-between`,
         }}
       >
-        <Link
+        <h1
           style={{
-            boxShadow: `none`,
-            color: `inherit`,
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
           }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h1>
+          <Link
+            style={{
+              boxShadow: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title}
+          </Link>
+        </h1>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <Switch
+              isOn={theme === 'dark'}
+              handleToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+            />
+          )}
+        </ThemeToggler>
+      </div>
     )
   } else {
     header = (
-      <h3
+      <div
         style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
+          display: `flex`,
+          justifyContent: `space-between`,
         }}
       >
-        <Link
+        <h3
           style={{
-            boxShadow: `none`,
-            color: `inherit`,
+            fontFamily: `Montserrat, sans-serif`,
+            marginTop: 0,
           }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h3>
+          <Link
+            style={{
+              boxShadow: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title}
+          </Link>
+        </h3>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <Switch
+              isOn={theme === 'dark'}
+              handleToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+            />
+          )}
+        </ThemeToggler>
+      </div>
     )
   }
   return (
