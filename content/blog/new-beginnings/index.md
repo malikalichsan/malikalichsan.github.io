@@ -9,7 +9,7 @@ Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
-```javascript{numberLines: true}
+```javascript
 let a = null;
 let b = 0;
 
