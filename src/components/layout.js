@@ -95,9 +95,21 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}.
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+          }}
+          to={`/`}
+        >
+          Go Home.
+        </Link>
+        {` `}
+        Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org" target={'_blank'}>Gatsby</a>
       </footer>
     </div>
   )
