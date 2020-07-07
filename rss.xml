@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Malik]]></title><description><![CDATA[Malik]]></description><link>https://malikalichsan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Jul 2020 14:47:43 GMT</lastBuildDate><item><title><![CDATA[PHP End Date]]></title><description><![CDATA[This is how we get date today But how to get end date of this month based on date today ? Just by adding   we can get end date of this month]]></description><link>https://malikalichsan.github.io/php-end-date/</link><guid isPermaLink="false">https://malikalichsan.github.io/php-end-date/</guid><pubDate>Wed, 01 Jul 2020 21:43:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token php language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Malik]]></title><description><![CDATA[Malik]]></description><link>https://malikalichsan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jul 2020 05:35:54 GMT</lastBuildDate><item><title><![CDATA[null and 0 Javascript]]></title><description><![CDATA[null is not same with 0]]></description><link>https://malikalichsan.github.io/null-and-0-javascript/</link><guid isPermaLink="false">https://malikalichsan.github.io/null-and-0-javascript/</guid><pubDate>Tue, 07 Jul 2020 12:27:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;null is not same with 0&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to setup project in LEMP]]></title><description><![CDATA[Copy project in  Create config nginx in  Symbolic link to sites-enable
+ Create host in  Add  Check  Reload nginx]]></description><link>https://malikalichsan.github.io/how-to-setup-project-in-lemp/</link><guid isPermaLink="false">https://malikalichsan.github.io/how-to-setup-project-in-lemp/</guid><pubDate>Tue, 07 Jul 2020 12:24:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Copy project in &lt;code class=&quot;language-text&quot;&gt;/var/www/html/project&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create config nginx in &lt;code class=&quot;language-text&quot;&gt;/etc/nginx/sites-available&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Symbolic link to sites-enable
+&lt;code class=&quot;language-text&quot;&gt;sudo ln -s /etc/nginx/sites-available/project.test /etc/nginx/sites-enabled&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create host in &lt;code class=&quot;language-text&quot;&gt;/etc/hosts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;code class=&quot;language-text&quot;&gt;127.0.0.1	project.test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Check &lt;code class=&quot;language-text&quot;&gt;sudo nginx -t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reload nginx &lt;code class=&quot;language-text&quot;&gt;sudo systemctl reload nginx&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Setting pimcore after cloning from gitlab]]></title><description><![CDATA[Git clone the repo Setting nginx sites-available Symbolic link ke sites-enabled Test nginx  Setting  Reload nginx Checkout to  branch…]]></description><link>https://malikalichsan.github.io/setting-pimcore-after-cloning-from-gitlab/</link><guid isPermaLink="false">https://malikalichsan.github.io/setting-pimcore-after-cloning-from-gitlab/</guid><pubDate>Tue, 07 Jul 2020 12:12:08 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Git clone the repo&lt;/li&gt;
+&lt;li&gt;Setting nginx sites-available&lt;/li&gt;
+&lt;li&gt;Symbolic link ke sites-enabled&lt;/li&gt;
+&lt;li&gt;Test nginx &lt;code class=&quot;language-text&quot;&gt;sudo nginx -t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting &lt;code class=&quot;language-text&quot;&gt;/etc/hosts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reload nginx&lt;/li&gt;
+&lt;li&gt;Checkout to &lt;code class=&quot;language-text&quot;&gt;development&lt;/code&gt; branch&lt;/li&gt;
+&lt;li&gt;settting database in &lt;code class=&quot;language-text&quot;&gt;var/config/system.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy &lt;code class=&quot;language-text&quot;&gt;var/config/website-settings.php&lt;/code&gt; from the developer&lt;/li&gt;
+&lt;li&gt;Check file &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt;, which one is important ask from the developer&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;composer install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;./bin/console cache:clear&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;./bin/console assets:install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;./bin/console pimcore:deployment:classes-rebuild -v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Optional: copy &lt;code class=&quot;language-text&quot;&gt;web/var/assets&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting permission folder &amp;#x26; file
+&lt;code class=&quot;language-text&quot;&gt;chown -R YOURUSER:YOURGROUP app/config bin composer.json pimcore var web/pimcore web/var&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;chmod ug+x bin/*&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If needed reload php fpm &lt;code class=&quot;language-text&quot;&gt;sudo systemctl reload php7.1-fpm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Quick Setting Pimcore From Scratch In Nginx]]></title><description><![CDATA[Quick setting pimcore from scratch in nginx. Install as usual according to doc Setting nginx sites-available Symbolic link to sites-enabled…]]></description><link>https://malikalichsan.github.io/quick-setting-pimcore-from-scratch-in-nginx/</link><guid isPermaLink="false">https://malikalichsan.github.io/quick-setting-pimcore-from-scratch-in-nginx/</guid><pubDate>Tue, 07 Jul 2020 12:11:03 GMT</pubDate><content:encoded>&lt;p&gt;Quick setting pimcore from scratch in nginx.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install as usual according to doc&lt;/li&gt;
+&lt;li&gt;Setting nginx sites-available&lt;/li&gt;
+&lt;li&gt;Symbolic link to sites-enabled&lt;/li&gt;
+&lt;li&gt;Test nginx &lt;code class=&quot;language-text&quot;&gt;sudo nginx -t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting up hosts&lt;/li&gt;
+&lt;li&gt;Reload nginx&lt;/li&gt;
+&lt;li&gt;Setting permission folder &amp;#x26; file of pimcore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# chmod 777 -R var/ web/var/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PHP End Date]]></title><description><![CDATA[This is how we get date today But how to get end date of this month based on date today ? Just by adding   we can get end date of this month]]></description><link>https://malikalichsan.github.io/php-end-date/</link><guid isPermaLink="false">https://malikalichsan.github.io/php-end-date/</guid><pubDate>Wed, 01 Jul 2020 21:43:03 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token php language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 
 &lt;span class=&quot;token variable&quot;&gt;$begin&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Ymd&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
